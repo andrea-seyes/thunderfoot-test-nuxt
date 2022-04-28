@@ -1,0 +1,48 @@
+
+// Color palette
+$colors: (
+    'dark': #1a191d,
+    'light': #ffffff,
+    'light-40': #ffffff66,
+);
+
+:root {
+    
+    // Colors
+    @each $color, $hex in $colors {
+        --color-#{$color}: #{$hex};
+    }
+
+    --color-font: var(--color-light);
+    --color-font-40: #ffffff66;
+    --color-bg: var(--color-dark);
+
+
+    // Typography
+    --font-family-headings: 'Red Hat Display', sans-serif;
+    --font-family-base: 'Red Hat Display', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+    --letter-spacing-base: normal;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+
+    // Layout
+    --main-padding-x: 6rem;
+    --header-height: 4rem;
+    
+    --scrollbar-width: .4rem;
+    --viewport-width: calc(100vw - var(--scrollbar-width));
+
+    transition: background-color .45s ease-in;
+}
+
+
+.light-theme {
+    --color-font: var(--color-dark);
+    --color-font-40: #00000040;
+    --color-bg: var(--color-light);
+    --brightness: 1.2;
+}

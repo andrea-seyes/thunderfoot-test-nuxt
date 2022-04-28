@@ -1,0 +1,100 @@
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+button {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 1px;
+}
+
+b, strong {
+    font-weight: var(--font-weight-bold);
+}
+
+button, a {
+    color: var(--color-font);
+    text-decoration: inherit;
+}
+
+
+// Headings
+.h-xl {
+    font-family: var(--font-family-headings);
+    font-size: 6rem;
+    line-height: 1.4;
+    letter-spacing: normal;
+}
+
+.h-md {
+    font-family: var(--font-family-headings);
+    font-size: 4rem;
+    line-height: 1.25;
+    letter-spacing: normal;
+}
+
+.h-xs {
+    font-family: var(--font-family-headings);
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: normal;
+}
+
+h1, h2 {
+    @extend .h-xl;
+}
+
+h3, h4 {
+    @extend .h-md;
+}
+
+h5, h6 {
+    @extend .h-xs;
+}
+
+
+// Text styles
+.txt-lg {
+    font-family: var(--font-family-base);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.txt-md { 
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    letter-spacing: normal;
+}
+
+.txt-xs {
+    font-family: var(--font-family-base);
+    font-size: .9rem;
+    line-height: var(--line-height-base);
+    letter-spacing: normal;
+}
+
+
+// Text uppercase
+.txt-upper {
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    font-weight: var(--font-weight-bold);
+}
+
+// Input label
+.txt-label {
+    @extend .txt-xs;
+    font-weight: var(--font-weight-bold);
+}

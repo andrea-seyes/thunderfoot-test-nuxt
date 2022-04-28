@@ -1,0 +1,54 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    background-color: var(--color-bg);
+    color: var(--color-font);
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+// Scrollbar
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-font) var(--color-bg);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--color-bg);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-font);
+}
+
+button { 
+    cursor: pointer;
+    border: 0;
+    border-color: transparent;
+    background: transparent;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
